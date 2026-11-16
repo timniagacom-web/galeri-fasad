@@ -1,0 +1,31 @@
+{
+  "name": "galeri-fasad",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:internal": "vite --mode internal",
+    "gambar:publik": "python3 scripts/gambar-publik.py",
+    "token:internal": "test -s .internal-token || python3 -c \"import secrets,string;a=string.ascii_lowercase+string.digits;print(''.join(secrets.choice(a) for _ in range(24)))\" > .internal-token",
+    "build": "npm run gambar:publik && tsc -b && vite build",
+    "build:internal": "npm run token:internal && npm run gambar:publik && tsc -b && vite build --mode internal",
+    "build:semua": "npm run build && npm run token:internal && vite build --mode internal && node scripts/rakit-deploy.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "preview:deploy": "python3 -m http.server 4175 --bind 127.0.0.1 --directory deploy-out",
+    "preview:internal": "python3 -m http.server 4176 --bind 127.0.0.1 --directory deploy-internal"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "playwright-core": "^1.65.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}

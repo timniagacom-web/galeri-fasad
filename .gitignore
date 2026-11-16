@@ -1,0 +1,20 @@
+node_modules/
+dist/
+dist-internal/
+deploy-out/
+.build/
+# gambar ASLI & token internal tidak boleh masuk repo sumber publik
+media/
+.internal-token
+.internal-token*
+.env
+deploy-internal/
+deploy/
+tsconfig.tsbuildinfo
+# tidak ada file gambar raster di repo sumber (gambar hanya di media/, tidak di-commit)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.zip
