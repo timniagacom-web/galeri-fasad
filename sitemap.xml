@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PRATINJAU SEMENTARA: sitemap ini belum boleh dikirim ke mesin pencari.
+     Meta noindex + robots.txt Disallow masih aktif. Hapus keduanya saat peluncuran resmi.
+     Catatan: situs memakai hash router (#/...), sehingga mesin pencari umumnya hanya mengindeks halaman utama.
+     Untuk SEO per-halaman, perlu prerender/route statis (lihat README). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://galeri.gambarexpress.id/</loc></url>
+</urlset>

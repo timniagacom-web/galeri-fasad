@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# PRATINJAU SEMENTARA (GitHub Pages + galeri.gambarexpress.id):
+# hapus Disallow dan meta noindex saat domain final diluncurkan resmi.
