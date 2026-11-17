@@ -206,6 +206,14 @@ export const SEMUA_FASAD: Fasad[] = [
     deskripsi: "Rumah tinggal bergaya Bali kontemporer dengan batu paras, overstek lebar, dan detail kayu yang hangat. Rumah 1 lantai tipe 36 untuk lahan lebar muka 6 m, beratap kombinasi, dengan warna dominan putih dan aksen batu paras dan roster batu." },
   { id: "GF-0084", batch: 4, judul: "Minang Kontemporer Tipe 70, Lebar 10 m, 2 Lantai", gaya: "minang-kontemporer", tipe: 70, lantai: 2, lebarLahan: 10, atap: "gonjong", warna: "krem", material: ["lisplang-ukir", "batu-alam"],
     deskripsi: "Rumah tinggal kontemporer dengan puncak gonjong khas Minangkabau sebagai aksen atap. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap gonjong, dengan warna dominan krem dan aksen lisplang ukir dan batu alam." },
+  { id: "GF-0085", batch: 5, judul: "Farmhouse Modern Tipe 70, Lebar 10 m, 2 Lantai", gaya: "farmhouse-modern", tipe: 70, lantai: 2, lebarLahan: 10, atap: "pelana", warna: "putih", material: ["papan-kayu", "kaca-besar"],
+    deskripsi: "Tafsir ulang farmhouse: dinding papan kayu putih, atap pelana curam, teras depan beratap, dan pagar kayu rendah. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap pelana, dengan warna dominan putih dan aksen papan kayu dan kaca besar." },
+  { id: "GF-0086", batch: 5, judul: "English Country Tipe 90, Lebar 12 m, 2 Lantai", gaya: "inggris-country", tipe: 90, lantai: 2, lebarLahan: 12, atap: "pelana-curam", warna: "krem", material: ["bata-ekspos", "batu-alam"],
+    deskripsi: "Gaya pedesaan Inggris: bata ekspos, batu alam, atap pelana curam dengan dormer, dan komposisi simetris. Rumah 2 lantai tipe 90+ untuk lahan lebar muka 12 m, beratap pelana curam, dengan warna dominan krem dan aksen bata ekspos dan batu alam." },
+  { id: "GF-0087", batch: 5, judul: "Organik Modern Tipe 70, Lebar 10 m, 2 Lantai", gaya: "organik-modern", tipe: 70, lantai: 2, lebarLahan: 10, atap: "kombinasi", warna: "earth-tone", material: ["batu-alam", "kayu"],
+    deskripsi: "Fasad biomorphic: bentuk melengkung dan dinamis, dinding earth tone, atap kombinasi, dan banyak tanaman. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap kombinasi, dengan warna dominan earth tone dan aksen batu alam dan kayu." },
+  { id: "GF-0088", batch: 5, judul: "Resort Modern Tipe 90, Lebar 12 m, 2 Lantai", gaya: "resort-modern", tipe: 90, lantai: 2, lebarLahan: 12, atap: "limasan", warna: "krem", material: ["batu-alam", "kaca-besar"],
+    deskripsi: "Suasana vila resort: overstek lebar, batu alam, kaca besar dari lantai ke langit-langit, dan teras deck kayu. Rumah 2 lantai tipe 90+ untuk lahan lebar muka 12 m, beratap limasan, dengan warna dominan krem dan aksen batu alam dan kaca besar." },
 ];
 
 /**

@@ -19,6 +19,11 @@ export const GAYA = [
   { value: 'banjar-kontemporer', label: 'Banjar Kontemporer', grup: 'nusantara', intro: 'Atap bubungan tinggi yang curam dan menjulang, diterjemahkan ke rumah perumahan.' },
   { value: 'toraja-kontemporer', label: 'Toraja Kontemporer', grup: 'nusantara', intro: 'Satu atap berbentuk perahu khas tongkonan pada rumah kota.' },
   { value: 'manado-kontemporer', label: 'Manado Kontemporer', grup: 'nusantara', intro: 'Pelana curam Minahasa, aksen papan kayu, dan panggung rendah berkolong tertutup.' },
+  // Tren 2026 (batch 5)
+  { value: 'farmhouse-modern', label: 'Farmhouse Modern', grup: 'modern', intro: 'Tafsir ulang farmhouse: dinding papan kayu putih, atap pelana, teras depan beratap, dan pagar kayu rendah.' },
+  { value: 'inggris-country', label: 'English Country', grup: 'modern', intro: 'Gaya pedesaan Inggris: bata ekspos, batu alam, atap pelana curam dengan dormer, dan komposisi simetris.' },
+  { value: 'organik-modern', label: 'Organik Modern', grup: 'modern', intro: 'Fasad biomorphic: bentuk melengkung dan dinamis, dinding earth tone, atap kombinasi, dan banyak tanaman.' },
+  { value: 'resort-modern', label: 'Resort Modern', grup: 'modern', intro: 'Suasana vila resort: overstek lebar, batu alam, kaca besar dari lantai ke langit-langit, dan teras deck kayu.' },
 ] as const;
 export type GayaSlug = (typeof GAYA)[number]['value'];
 /** Kelompok gaya untuk filter tingkat pertama (Modern / Nusantara). */
