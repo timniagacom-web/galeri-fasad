@@ -198,6 +198,14 @@ export const SEMUA_FASAD: Fasad[] = [
     deskripsi: "Interpretasi kontemporer rumah Minahasa dengan pelana curam dan aksen papan kayu. Rumah 1 lantai tipe 45 untuk lahan lebar muka 6 m, beratap pelana curam khas Minahasa, dengan warna dominan biru navy dan aksen papan kayu horizontal dan roster." },
   { id: "GF-0080", batch: 3, judul: "Manado Kontemporer Tipe 70, Lebar 10 m, 2 Lantai", gaya: "manado-kontemporer", tipe: 70, lantai: 2, lebarLahan: 10, atap: "pelana-curam", warna: "hijau-sage", material: ["papan-kayu", "kaca-besar"],
     deskripsi: "Interpretasi kontemporer rumah Minahasa dengan pelana curam dan aksen papan kayu. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap pelana curam khas Minahasa, dengan warna dominan hijau sage dan aksen papan kayu dan kaca besar." },
+  { id: "GF-0081", batch: 4, judul: "Jawa Kontemporer Tipe 70, Lebar 10 m, 2 Lantai", gaya: "jawa-kontemporer", tipe: 70, lantai: 2, lebarLahan: 10, atap: "limasan", warna: "krem", material: ["kolom-kayu", "batu-alam"],
+    deskripsi: "Interpretasi kontemporer rumah Jawa dengan teras emper dan kolom kayu yang disederhanakan, dipadu dinding plester. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap limasan, dengan warna dominan krem dan aksen kolom kayu sederhana dan batu alam." },
+  { id: "GF-0082", batch: 4, judul: "Sunda Kontemporer Tipe 70, Lebar 8 m, 2 Lantai", gaya: "sunda-kontemporer", tipe: 70, lantai: 2, lebarLahan: 8, atap: "julang-ngapak", warna: "putih", material: ["kayu", "batu-alam"],
+    deskripsi: "Interpretasi kontemporer rumah Sunda dengan atap julang ngapak yang melebar seperti sayap. Rumah 2 lantai tipe 70 untuk lahan lebar muka 8 m, beratap julang ngapak, dengan warna dominan putih dan aksen kayu dan batu alam." },
+  { id: "GF-0083", batch: 4, judul: "Bali Kontemporer Tipe 36, Lebar 6 m, 1 Lantai", gaya: "bali-kontemporer", tipe: 36, lantai: 1, lebarLahan: 6, atap: "kombinasi", warna: "putih", material: ["batu-paras", "roster-batu"],
+    deskripsi: "Rumah tinggal bergaya Bali kontemporer dengan batu paras, overstek lebar, dan detail kayu yang hangat. Rumah 1 lantai tipe 36 untuk lahan lebar muka 6 m, beratap kombinasi, dengan warna dominan putih dan aksen batu paras dan roster batu." },
+  { id: "GF-0084", batch: 4, judul: "Minang Kontemporer Tipe 70, Lebar 10 m, 2 Lantai", gaya: "minang-kontemporer", tipe: 70, lantai: 2, lebarLahan: 10, atap: "gonjong", warna: "krem", material: ["lisplang-ukir", "batu-alam"],
+    deskripsi: "Rumah tinggal kontemporer dengan puncak gonjong khas Minangkabau sebagai aksen atap. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap gonjong, dengan warna dominan krem dan aksen lisplang ukir dan batu alam." },
 ];
 
 /**
