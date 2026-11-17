@@ -1,9 +1,6 @@
 {
   "_keterangan": "Fasad yang TIDAK ditampilkan dan gambarnya TIDAK ikut build (publik & internal). Isi 'id' dengan GF-ID (mis. \"GF-0033\") atau 'batch' dengan nomor batch (mis. 2). Lalu npm run build:semua.",
   "id": [
-    "GF-0033",
-    "GF-0034",
-    "GF-0039",
     "GF-0073",
     "GF-0074",
     "GF-0077",
