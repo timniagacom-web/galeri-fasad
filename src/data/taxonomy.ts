@@ -24,6 +24,8 @@ export const GAYA = [
   { value: 'inggris-country', label: 'English Country', grup: 'modern', intro: 'Gaya pedesaan Inggris: bata ekspos, batu alam, atap pelana curam dengan dormer, dan komposisi simetris.' },
   { value: 'organik-modern', label: 'Organik Modern', grup: 'modern', intro: 'Fasad biomorphic: bentuk melengkung dan dinamis, dinding earth tone, atap kombinasi, dan banyak tanaman.' },
   { value: 'resort-modern', label: 'Resort Modern', grup: 'modern', intro: 'Suasana vila resort: overstek lebar, batu alam, kaca besar dari lantai ke langit-langit, dan teras deck kayu.' },
+  // Sederhana Modern (batch 8, dari foto referensi owner)
+  { value: 'sederhana-modern', label: 'Sederhana Modern', grup: 'modern', intro: 'Rumah sederhana modern: dinding putih, atap pelana genteng merah, teras berkolom ramping, dan carport di samping.' },
   // Ruko (batch 7)
   { value: 'ruko-modern', label: 'Ruko Modern', grup: 'ruko', intro: 'Ruko modern: etalase kaca besar di lantai dasar, hunian atau kantor di lantai atas, atap dak datar.' },
   { value: 'ruko-minimalis', label: 'Ruko Minimalis', grup: 'ruko', intro: 'Ruko minimalis: garis tegas, bidang kotak, beton ekspos, dan jendela kaca besar.' },
