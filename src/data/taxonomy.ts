@@ -24,12 +24,18 @@ export const GAYA = [
   { value: 'inggris-country', label: 'English Country', grup: 'modern', intro: 'Gaya pedesaan Inggris: bata ekspos, batu alam, atap pelana curam dengan dormer, dan komposisi simetris.' },
   { value: 'organik-modern', label: 'Organik Modern', grup: 'modern', intro: 'Fasad biomorphic: bentuk melengkung dan dinamis, dinding earth tone, atap kombinasi, dan banyak tanaman.' },
   { value: 'resort-modern', label: 'Resort Modern', grup: 'modern', intro: 'Suasana vila resort: overstek lebar, batu alam, kaca besar dari lantai ke langit-langit, dan teras deck kayu.' },
+  // Ruko (batch 7)
+  { value: 'ruko-modern', label: 'Ruko Modern', grup: 'ruko', intro: 'Ruko modern: etalase kaca besar di lantai dasar, hunian atau kantor di lantai atas, atap dak datar.' },
+  { value: 'ruko-minimalis', label: 'Ruko Minimalis', grup: 'ruko', intro: 'Ruko minimalis: garis tegas, bidang kotak, beton ekspos, dan jendela kaca besar.' },
+  { value: 'ruko-tropis', label: 'Ruko Tropis', grup: 'ruko', intro: 'Ruko tropis: atap miring satu arah dengan overstek lebar, kisi kayu, dan batu alam.' },
+  { value: 'ruko-klasik', label: 'Ruko Klasik', grup: 'ruko', intro: 'Ruko klasik: kolom klasik, list profil, dan balkon railing klasik, komposisi simetris.' },
 ] as const;
 export type GayaSlug = (typeof GAYA)[number]['value'];
 /** Kelompok gaya untuk filter tingkat pertama (Modern / Nusantara). */
 export const GRUP_GAYA = [
   { value: 'modern', label: 'Modern' },
   { value: 'nusantara', label: 'Nusantara' },
+  { value: 'ruko', label: 'Ruko' },
 ] as const;
 export type GrupGaya = (typeof GRUP_GAYA)[number]['value'];
 export const grupGaya = (slug: string): GrupGaya | undefined => GAYA.find((g) => g.value === slug)?.grup;
@@ -38,7 +44,7 @@ export const TIPE: Opsi<number>[] = [
   { value: 36, label: 'Tipe 36' }, { value: 45, label: 'Tipe 45' }, { value: 54, label: 'Tipe 54' },
   { value: 70, label: 'Tipe 70' }, { value: 90, label: 'Tipe 90+' },
 ];
-export const LANTAI: Opsi<number>[] = [{ value: 1, label: '1 lantai' }, { value: 2, label: '2 lantai' }];
+export const LANTAI: Opsi<number>[] = [{ value: 1, label: '1 lantai' }, { value: 2, label: '2 lantai' }, { value: 3, label: '3 lantai' }];
 export const LEBAR: Opsi<number>[] = [
   { value: 6, label: '6 m' }, { value: 7, label: '7 m' }, { value: 8, label: '8 m' },
   { value: 10, label: '10 m' }, { value: 12, label: '12 m+' },

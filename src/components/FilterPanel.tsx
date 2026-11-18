@@ -63,7 +63,7 @@ export default function FilterPanel({ value, onChange, open, onClose, hasil, sem
               ))}
             </>
           )}
-          <Grup judul="Tipe rumah" opsi={TIPE} pilih={value.tipe} onToggle={(v) => tog('tipe', v)} />
+          <Grup judul="Tipe bangunan" opsi={TIPE} pilih={value.tipe} onToggle={(v) => tog('tipe', v)} />
           <Grup judul="Jumlah lantai" opsi={LANTAI} pilih={value.lantai} onToggle={(v) => tog('lantai', v)} />
           <Grup judul="Lebar lahan" opsi={LEBAR} pilih={value.lebar} onToggle={(v) => tog('lebar', v)} />
           <Grup judul="Atap" opsi={ATAP_TAMPIL} pilih={value.atap} onToggle={(v) => tog('atap', v)} />

@@ -15,7 +15,7 @@ export type Fasad = {
   judul: string;
   gaya: GayaSlug;
   tipe: number; // 36 | 45 | 54 | 70 | 90+ (luas bangunan m²)
-  lantai: 1 | 2;
+  lantai: 1 | 2 | 3;
   lebarLahan: number; // meter
   atap: string; // slug ATAP
   warna: string; // slug WARNA
@@ -222,6 +222,14 @@ export const SEMUA_FASAD: Fasad[] = [
     deskripsi: "Fasad biomorphic: bentuk melengkung dan dinamis, dinding earth tone, atap kombinasi, dan banyak tanaman. Rumah 1 lantai tipe 45 untuk lahan lebar muka 8 m, beratap kombinasi, dengan warna dominan earth tone dan aksen batu alam dan kaca besar." },
   { id: "GF-0092", batch: 6, judul: "Resort Modern Tipe 70, Lebar 10 m, 2 Lantai", gaya: "resort-modern", tipe: 70, lantai: 2, lebarLahan: 10, atap: "limasan", warna: "putih", material: ["kayu", "kaca-besar"],
     deskripsi: "Suasana vila resort: overstek lebar, kayu, kaca besar dari lantai ke langit-langit, dan teras deck kayu. Rumah 2 lantai tipe 70 untuk lahan lebar muka 10 m, beratap limasan, dengan warna dominan putih dan aksen kayu dan kaca besar." },
+  { id: "GF-0093", batch: 7, judul: "Ruko Modern Tipe 70, Lebar 6 m, 2 Lantai", gaya: "ruko-modern", tipe: 70, lantai: 2, lebarLahan: 6, atap: "dak-datar", warna: "putih", material: ["kaca-besar", "besi-hollow"],
+    deskripsi: "Ruko modern: etalase kaca besar di lantai dasar, hunian atau kantor di lantai atas, atap dak datar. Ruko 2 lantai tipe 70 untuk lahan lebar muka 6 m, beratap dak datar, dengan warna dominan putih dan aksen kaca besar dan besi hollow." },
+  { id: "GF-0094", batch: 7, judul: "Ruko Minimalis Tipe 90, Lebar 6 m, 3 Lantai", gaya: "ruko-minimalis", tipe: 90, lantai: 3, lebarLahan: 6, atap: "dak-datar", warna: "abu", material: ["beton-ekspos", "kaca-besar"],
+    deskripsi: "Ruko minimalis: garis tegas, bidang kotak, beton ekspos, dan jendela kaca besar. Ruko 3 lantai tipe 90+ untuk lahan lebar muka 6 m, beratap dak datar, dengan warna dominan abu dan aksen beton ekspos dan kaca besar." },
+  { id: "GF-0095", batch: 7, judul: "Ruko Tropis Tipe 70, Lebar 6 m, 2 Lantai", gaya: "ruko-tropis", tipe: 70, lantai: 2, lebarLahan: 6, atap: "miring-satu-arah", warna: "krem", material: ["kisi-kayu", "batu-alam"],
+    deskripsi: "Ruko tropis: atap miring satu arah dengan overstek lebar, kisi kayu, dan batu alam. Ruko 2 lantai tipe 70 untuk lahan lebar muka 6 m, beratap miring satu arah, dengan warna dominan krem dan aksen kisi kayu dan batu alam." },
+  { id: "GF-0096", batch: 7, judul: "Ruko Klasik Tipe 90, Lebar 8 m, 3 Lantai", gaya: "ruko-klasik", tipe: 90, lantai: 3, lebarLahan: 8, atap: "pelana", warna: "putih", material: ["kolom-klasik", "list-profil"],
+    deskripsi: "Ruko klasik: kolom klasik, list profil, dan balkon railing klasik, komposisi simetris. Ruko 3 lantai tipe 90+ untuk lahan lebar muka 8 m, beratap pelana, dengan warna dominan putih dan aksen kolom klasik dan list profil." },
 ];
 
 /**
