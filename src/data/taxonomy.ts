@@ -31,13 +31,19 @@ export const GAYA = [
   { value: 'ruko-minimalis', label: 'Ruko Minimalis', grup: 'ruko', intro: 'Ruko minimalis: garis tegas, bidang kotak, beton ekspos, dan jendela kaca besar.' },
   { value: 'ruko-tropis', label: 'Ruko Tropis', grup: 'ruko', intro: 'Ruko tropis: atap miring satu arah dengan overstek lebar, kisi kayu, dan batu alam.' },
   { value: 'ruko-klasik', label: 'Ruko Klasik', grup: 'ruko', intro: 'Ruko klasik: kolom klasik, list profil, dan balkon railing klasik, komposisi simetris.' },
+  // Gudang (batch 9)
+  { value: 'gudang-baja-modern', label: 'Gudang Baja Modern', grup: 'gudang', intro: 'Gudang baja modern: rangka baja portal frame, dinding panel metal, dan pintu roller shutter besar.' },
+  { value: 'gudang-struktur-baja', label: 'Gudang Struktur Baja', grup: 'gudang', intro: 'Gudang struktur baja: struktur baja terekspos, bentang lebar tanpa kolom tengah, dan atap pelana tinggi.' },
+  { value: 'structural-shed', label: 'Structural Shed', grup: 'gudang', intro: 'Structural shed: gudang terbuka beratap miring dengan kolom baja dan area bongkar muat yang luas.' },
+  { value: 'gudang-industri', label: 'Gudang Industri', grup: 'gudang', intro: 'Gudang industri: beton ekspos, panel metal, loading dock, dan halaman truk yang luas.' },
 ] as const;
 export type GayaSlug = (typeof GAYA)[number]['value'];
-/** Kelompok gaya untuk filter tingkat pertama (Modern / Nusantara). */
+/** Kelompok gaya untuk filter tingkat pertama (Modern / Nusantara / Ruko / Gudang). */
 export const GRUP_GAYA = [
   { value: 'modern', label: 'Modern' },
   { value: 'nusantara', label: 'Nusantara' },
   { value: 'ruko', label: 'Ruko' },
+  { value: 'gudang', label: 'Gudang' },
 ] as const;
 export type GrupGaya = (typeof GRUP_GAYA)[number]['value'];
 export const grupGaya = (slug: string): GrupGaya | undefined => GAYA.find((g) => g.value === slug)?.grup;
@@ -45,11 +51,17 @@ export const grupGaya = (slug: string): GrupGaya | undefined => GAYA.find((g) =>
 export const TIPE: Opsi<number>[] = [
   { value: 36, label: 'Tipe 36' }, { value: 45, label: 'Tipe 45' }, { value: 54, label: 'Tipe 54' },
   { value: 70, label: 'Tipe 70' }, { value: 90, label: 'Tipe 90+' },
+  // batch 9 (gudang)
+  { value: 150, label: 'Tipe 150' }, { value: 200, label: 'Tipe 200' },
+  { value: 300, label: 'Tipe 300' }, { value: 500, label: 'Tipe 500' },
 ];
 export const LANTAI: Opsi<number>[] = [{ value: 1, label: '1 lantai' }, { value: 2, label: '2 lantai' }, { value: 3, label: '3 lantai' }];
 export const LEBAR: Opsi<number>[] = [
   { value: 6, label: '6 m' }, { value: 7, label: '7 m' }, { value: 8, label: '8 m' },
   { value: 10, label: '10 m' }, { value: 12, label: '12 m+' },
+  // batch 9 (gudang)
+  { value: 15, label: '15 m' }, { value: 18, label: '18 m' },
+  { value: 20, label: '20 m' }, { value: 24, label: '24 m' },
 ];
 export const ATAP: Opsi[] = [
   { value: 'dak-datar', label: 'Dak datar' }, { value: 'pelana', label: 'Pelana' },
@@ -80,11 +92,13 @@ export const MATERIAL: Record<string, string> = {
   'kolom-kayu': 'Kolom kayu', 'kolom-soko': 'Kolom soko kayu', 'batu-paras': 'Batu paras', 'roster-batu': 'Roster batu', 'kosen-kayu': 'Kosen kayu',
   'roster-ukir': 'Roster ukir', 'lisplang-ukir': 'Lisplang ukir', 'kolom-sederhana': 'Kolom sederhana', 'sisik-angin': 'Sisik angin ukir',
   'papan-gable-ukir': 'Papan gable ukir', 'ornamen-geometris': 'Ornamen geometris', 'papan-kayu-horizontal': 'Papan kayu horizontal', 'papan-kayu': 'Papan kayu',
+  // batch 9 (gudang)
+  baja: 'Baja', 'panel-metal': 'Panel metal',
 };
 
 const find = <T extends string | number>(list: readonly Opsi<T>[], v: T) => list.find((o) => o.value === v)?.label ?? String(v);
 export const labelGaya = (v: string) => GAYA.find((g) => g.value === v)?.label ?? v;
-export const labelTipe = (v: number) => (v >= 90 ? 'Tipe 90+' : `Tipe ${v}`);
+export const labelTipe = (v: number) => (v === 90 ? 'Tipe 90+' : `Tipe ${v}`);
 export const labelLebar = (v: number) => (v >= 12 ? `${v} m` : `${v} m`);
 export const labelAtap = (v: string) => find(ATAP, v);
 export const labelWarna = (v: string) => find(WARNA, v);

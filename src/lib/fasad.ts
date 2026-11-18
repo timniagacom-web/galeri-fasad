@@ -28,7 +28,7 @@ const kosong = (key: string) => `${B}g/tidak-ada-${key}.webp`;
 export const gambarFasad = (f: Fasad) => f.gambar ?? info(f.id)?.full ?? kosong(f.id);
 export const thumbFasad = (f: Fasad) => (f.gambar ? undefined : info(f.id)?.thumb);
 export const altFasad = (f: Fasad, palet?: PaletId | 'asli') =>
-  (f.alt ?? `Desain konsep fasad ${f.gaya.startsWith('ruko') ? 'ruko' : 'rumah'} ${labelGaya(f.gaya).toLowerCase()} ${labelTipe(f.tipe).toLowerCase()} lebar lahan ${f.lebarLahan} meter ${f.lantai} lantai`) +
+  (f.alt ?? `Desain konsep fasad ${f.gaya.startsWith('ruko') ? 'ruko' : (f.gaya.startsWith('gudang') || f.gaya === 'structural-shed') ? 'gudang' : 'rumah'} ${labelGaya(f.gaya).toLowerCase()} ${labelTipe(f.tipe).toLowerCase()} lebar lahan ${f.lebarLahan} meter ${f.lantai} lantai`) +
   (palet && palet !== 'asli' ? `, varian palet ${labelPalet(palet).toLowerCase()}` : '');
 
 /** Palet yang punya gambar untuk fasad ini, urut sesuai PALET. */
